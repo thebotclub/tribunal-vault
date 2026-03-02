@@ -15,6 +15,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
 from _util import NC, YELLOW
+from _audit import AuditLogger
 
 EXCLUDED_EXTENSIONS = [
     ".md",
@@ -211,13 +212,20 @@ def is_trivial_edit(tool_name: str, tool_input: dict) -> bool:
     return False
 
 
-def warn(message: str, suggestion: str, affected_tests: list[str] | None = None) -> int:
+def warn(message: str, suggestion: str, affected_tests: list[str] | None = None, file_path: str = "") -> int:
     """Print a TDD reminder to stderr and return exit code 2 (non-blocking PostToolUse signal)."""
     print("", file=sys.stderr)
     print(f"{YELLOW}TDD Reminder: {message}{NC}", file=sys.stderr)
     print(f"{YELLOW}    {suggestion}{NC}", file=sys.stderr)
     if affected_tests:
         print(f"{YELLOW}    Affected tests: {', '.join(affected_tests)}{NC}", file=sys.stderr)
+    # Structured audit log
+    logger = AuditLogger(hook_name="tdd_enforcer")
+    detail = f"{message} | {suggestion}"
+    if affected_tests:
+        detail += f" | affected: {','.join(affected_tests)}"
+    logger.set_outcome("warned", detail=detail)
+    logger.log(file_path=file_path)
     return 2
 
 
