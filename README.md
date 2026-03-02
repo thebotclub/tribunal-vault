@@ -97,11 +97,11 @@ vault/
 
 ```bash
 # Configure vault (first time)
-meridian init --type git --repo-url https://github.com/thebotclub/meridian-vault.git
+sx init --type git --repo-url https://github.com/thebotclub/meridian-vault.git
 # Note: `sx` is a companion CLI — install via `pip install skillfield-sx`
 
 # Install all vault assets to your project
-meridian install --repair --target .
+sx install --repair --target .
 
 # Or from within Meridian
 > /vault
@@ -118,17 +118,17 @@ When you create a new skill, rule, or command that others could use:
 > Push
 
 # Or via CLI
-meridian add .claude/skills/my-skill --yes --type skill --name "my-skill"
+sx add .claude/skills/my-skill --yes --type skill --name "my-skill"
 ```
 
 ### Browse the vault
 
 ```bash
 # List everything
-meridian vault list
+skillfield vault list
 
 # Show details for a specific asset
-meridian vault show <asset-name>
+skillfield vault show <asset-name>
 
 # Or from within Meridian
 > /vault
