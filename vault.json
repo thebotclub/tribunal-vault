@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "generated_at": "2026-03-02T05:02:07.769696+00:00",
+  "generated_at": "2026-03-02T05:05:04.181305+00:00",
   "assets": {
     "rules": [
       {
@@ -201,6 +201,11 @@
     ],
     "agents": [
       {
+        "path": "agents/context-compressor.md",
+        "name": "context-compressor",
+        "ext": ".md"
+      },
+      {
         "path": "agents/plan-challenger.md",
         "name": "plan-challenger",
         "ext": ".md"
@@ -288,6 +293,11 @@
         "ext": ".py"
       },
       {
+        "path": "hooks/spec_drift_detector.py",
+        "name": "spec_drift_detector",
+        "ext": ".py"
+      },
+      {
         "path": "hooks/spec_plan_validator.py",
         "name": "spec_plan_validator",
         "ext": ".py"
@@ -314,6 +324,11 @@
       }
     ],
     "scripts": [
+      {
+        "path": "scripts/add_frontmatter.py",
+        "name": "add_frontmatter",
+        "ext": ".py"
+      },
       {
         "path": "scripts/generate_manifest.py",
         "name": "generate_manifest",
