@@ -214,11 +214,13 @@ def is_trivial_edit(tool_name: str, tool_input: dict) -> bool:
 
 def warn(message: str, suggestion: str, affected_tests: list[str] | None = None, file_path: str = "") -> int:
     """Print a TDD reminder to stderr and return exit code 2 (non-blocking PostToolUse signal)."""
+    rule_link = "https://github.com/thebotclub/meridian-vault/blob/main/rules/workflow/tdd.md"
     print("", file=sys.stderr)
-    print(f"{YELLOW}TDD Reminder: {message}{NC}", file=sys.stderr)
-    print(f"{YELLOW}    {suggestion}{NC}", file=sys.stderr)
+    print(f"{YELLOW}⚠ TDD Reminder: {message}{NC}", file=sys.stderr)
+    print(f"{YELLOW}  What to do next: {suggestion}{NC}", file=sys.stderr)
     if affected_tests:
-        print(f"{YELLOW}    Affected tests: {', '.join(affected_tests)}{NC}", file=sys.stderr)
+        print(f"{YELLOW}  Affected tests: {', '.join(affected_tests)}{NC}", file=sys.stderr)
+    print(f"{YELLOW}  Rule: {rule_link}{NC}", file=sys.stderr)
     # Structured audit log
     logger = AuditLogger(hook_name="tdd_enforcer")
     detail = f"{message} | {suggestion}"

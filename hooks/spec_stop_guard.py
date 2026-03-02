@@ -115,12 +115,15 @@ def main() -> int:
 
     next_phase = get_next_phase(status, approved)
 
+    rule_link = "https://github.com/thebotclub/meridian-vault/blob/main/rules/workflow/spec-workflow.md"
     print(
-        f"{RED}⛔ /spec workflow active - cannot stop without user interaction{NC}",
+        f"{RED}⛔ BLOCKED — /spec workflow active - cannot stop without user interaction{NC}",
         file=sys.stderr,
     )
-    print(f"{YELLOW}Active plan: {plan_path} (Status: {status}){NC}", file=sys.stderr)
+    print(f"{YELLOW}Detected: active plan at {plan_path} (Status: {status}){NC}", file=sys.stderr)
+    print(f"{YELLOW}What to do next: complete the current /spec phase or ask the user a question.{NC}", file=sys.stderr)
     print(f"{YELLOW}💡 Stop again within 60s to force exit{NC}", file=sys.stderr)
+    print(f"{YELLOW}Rule: {rule_link}{NC}", file=sys.stderr)
     print("", file=sys.stderr)
     print("You may only stop when:", file=sys.stderr)
     print("  • Asking user for plan approval (use AskUserQuestion)", file=sys.stderr)
