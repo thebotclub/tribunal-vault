@@ -1,0 +1,54 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Generate manifest.json
+        run: python scripts/generate_manifest.py
+
+      - name: Import GPG key
+        env:
+          GPG_PRIVATE_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
+        run: |
+          echo "$GPG_PRIVATE_KEY" | gpg --batch --import
+          GPG_KEY_ID=$(gpg --list-secret-keys --with-colons | grep '^fpr' | head -1 | cut -d: -f10)
+          echo "GPG_KEY_ID=$GPG_KEY_ID" >> $GITHUB_ENV
+
+      - name: Sign manifest.json
+        run: |
+          gpg --batch --yes \
+            --local-user "$GPG_KEY_ID" \
+            --detach-sign \
+            --armor \
+            --output manifest.json.sig \
+            manifest.json
+          gpg --verify manifest.json.sig manifest.json
+
+      - name: Export GPG public key
+        run: |
+          gpg --armor --export "$GPG_KEY_ID" > meridian-vault-pubkey.asc
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            manifest.json
+            manifest.json.sig
+            meridian-vault-pubkey.asc
+          generate_release_notes: true
