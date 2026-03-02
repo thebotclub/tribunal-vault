@@ -1,3 +1,12 @@
+---
+id: rules/skillfield-cli
+version: 1.0.0
+category: tools
+tags:
+  - tools
+deprecated: false
+---
+
 ## Skillfield CLI Reference
 
 The `skillfield` binary is at `~/.skillfield/bin/skillfield`. These are **all** available commands — do NOT call commands that aren't listed here.

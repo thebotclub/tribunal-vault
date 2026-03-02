@@ -1,3 +1,12 @@
+---
+id: rules/git-operations
+version: 1.0.0
+category: tools
+tags:
+  - tools
+deprecated: false
+---
+
 ## Git Operations - Read-Only by Default
 
 **Rule:** You may READ git state freely, but NEVER execute git WRITE COMMANDS without EXPLICIT user permission.

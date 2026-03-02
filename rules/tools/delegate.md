@@ -1,3 +1,12 @@
+---
+id: rules/delegate
+version: 1.0.0
+category: tools
+tags:
+  - tools
+deprecated: false
+---
+
 ## Sub-Agent Delegation via claude-code
 
 Skillfield can delegate heavy file operations to a Claude Code sub-agent via the `claude-code` MCP server. This keeps your main session's context clean and avoids unnecessary compactions.

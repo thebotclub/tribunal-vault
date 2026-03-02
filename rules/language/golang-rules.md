@@ -1,6 +1,12 @@
 ---
-paths:
-  - "**/*.go"
+id: rules/golang-rules
+version: 1.0.0
+category: language
+tags:
+  - language
+  - go
+deprecated: false
+paths: 
 ---
 
 ## Go Development Standards

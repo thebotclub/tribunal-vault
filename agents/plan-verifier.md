@@ -1,4 +1,9 @@
 ---
+id: agents/plan-verifier
+version: 1.0.0
+category: plan-verifier.md
+tags: []
+deprecated: false
 name: plan-verifier
 description: Verifies plan completeness and alignment with user requirements. Returns structured JSON findings.
 tools: Read, Grep, Glob, Write

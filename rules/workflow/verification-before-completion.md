@@ -1,3 +1,12 @@
+---
+id: rules/verification-before-completion
+version: 1.0.0
+category: workflow
+tags:
+  - workflow
+deprecated: false
+---
+
 ## Verification Before Completion
 
 **Core Principle:** Evidence before claims. Never claim success without fresh verification output.

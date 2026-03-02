@@ -1,11 +1,12 @@
 ---
-paths:
-  - "**/*.ts"
-  - "**/*.tsx"
-  - "**/*.js"
-  - "**/*.jsx"
-  - "**/*.mjs"
-  - "**/*.mts"
+id: rules/typescript-rules
+version: 1.0.0
+category: language
+tags:
+  - language
+  - typescript
+deprecated: false
+paths: 
 ---
 
 ## TypeScript Development Standards

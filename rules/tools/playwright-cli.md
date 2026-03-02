@@ -1,3 +1,13 @@
+---
+id: rules/playwright-cli
+version: 1.0.0
+category: tools
+tags:
+  - tools
+  - workflow
+deprecated: false
+---
+
 ## Browser Automation with playwright-cli
 
 ### When to Use playwright-cli

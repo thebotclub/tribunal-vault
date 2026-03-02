@@ -1,9 +1,11 @@
 ---
-paths:
-  - "**/*.tsx"
-  - "**/*.jsx"
-  - "**/*.vue"
-  - "**/*.svelte"
+id: rules/standards-components
+version: 1.0.0
+category: standards
+tags:
+  - standards
+deprecated: false
+paths: 
 ---
 
 # Components Standards

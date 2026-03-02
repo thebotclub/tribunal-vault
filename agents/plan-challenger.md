@@ -1,4 +1,9 @@
 ---
+id: agents/plan-challenger
+version: 1.0.0
+category: plan-challenger.md
+tags: []
+deprecated: false
 name: plan-challenger
 description: Adversarial plan reviewer that challenges assumptions, finds weaknesses, and proposes failure scenarios. Returns structured JSON findings.
 tools: Read, Grep, Glob, Write

@@ -1,3 +1,12 @@
+---
+id: rules/web-search
+version: 1.0.0
+category: tools
+tags:
+  - tools
+deprecated: false
+---
+
 ## Web Search and Scraping (No API Key Required)
 
 **Use MCP tools for web access. Built-in WebSearch/WebFetch are blocked by hook.**

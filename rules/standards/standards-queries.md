@@ -1,10 +1,12 @@
 ---
-paths:
-  - "**/*.sql"
-  - "**/queries/**"
-  - "**/repository/**"
-  - "**/repositories/**"
-  - "**/dao/**"
+id: rules/standards-queries
+version: 1.0.0
+category: standards
+tags:
+  - standards
+  - python
+deprecated: false
+paths: 
 ---
 
 # Queries Standards

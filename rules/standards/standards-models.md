@@ -1,10 +1,11 @@
 ---
-paths:
-  - "**/models/**"
-  - "**/models.py"
-  - "**/schema.prisma"
-  - "**/schema/**"
-  - "**/entities/**"
+id: rules/standards-models
+version: 1.0.0
+category: standards
+tags:
+  - standards
+deprecated: false
+paths: 
 ---
 
 # Models Standards

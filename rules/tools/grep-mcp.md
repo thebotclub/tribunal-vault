@@ -1,3 +1,12 @@
+---
+id: rules/grep-mcp
+version: 1.0.0
+category: tools
+tags:
+  - tools
+deprecated: false
+---
+
 ## GitHub Code Search with grep-mcp
 
 **Use grep-mcp to find real-world code examples from 1M+ public GitHub repositories.** See how production code implements patterns, APIs, and integrations.

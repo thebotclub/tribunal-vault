@@ -1,12 +1,12 @@
 ---
-paths:
-  - "**/*.css"
-  - "**/*.scss"
-  - "**/*.tsx"
-  - "**/*.jsx"
-  - "**/*.html"
-  - "**/*.vue"
-  - "**/*.svelte"
+id: rules/standards-responsive
+version: 1.0.0
+category: standards
+tags:
+  - standards
+  - css
+deprecated: false
+paths: 
 ---
 
 # Responsive Design Standards

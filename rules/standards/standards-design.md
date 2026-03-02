@@ -1,14 +1,12 @@
 ---
-paths:
-  - "**/*.css"
-  - "**/*.scss"
-  - "**/*.sass"
-  - "**/*.less"
-  - "**/*.tsx"
-  - "**/*.jsx"
-  - "**/*.html"
-  - "**/*.vue"
-  - "**/*.svelte"
+id: rules/standards-design
+version: 1.0.0
+category: standards
+tags:
+  - standards
+  - css
+deprecated: false
+paths: 
 ---
 
 # Design Standards

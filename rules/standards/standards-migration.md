@@ -1,9 +1,11 @@
 ---
-paths:
-  - "**/migrations/**"
-  - "**/migrate/**"
-  - "**/alembic/**"
-  - "**/db/migrate/**"
+id: rules/standards-migration
+version: 1.0.0
+category: standards
+tags:
+  - standards
+deprecated: false
+paths: 
 ---
 
 # Migration Standards

@@ -1,3 +1,12 @@
+---
+id: rules/gh-cli
+version: 1.0.0
+category: tools
+tags:
+  - tools
+deprecated: false
+---
+
 ## GitHub CLI (gh)
 
 **Use `gh` for all GitHub operations instead of API calls or web scraping.**

@@ -1,4 +1,10 @@
 ---
+id: agents/spec-reviewer-compliance
+version: 1.0.0
+category: spec-reviewer-compliance.md
+tags:
+  - spec
+deprecated: false
 name: spec-reviewer-compliance
 description: Verifies implementation matches the plan, DoD criteria are met, and risk mitigations are implemented. Returns structured JSON findings.
 tools: Read, Grep, Glob, Write, Bash(git diff:*), Bash(git log:*)

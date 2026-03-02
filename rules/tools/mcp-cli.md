@@ -1,3 +1,12 @@
+---
+id: rules/mcp-cli
+version: 1.0.0
+category: tools
+tags:
+  - tools
+deprecated: false
+---
+
 ## MCP-CLI
 
 Access custom MCP servers through the command line. MCP enables interaction with external systems like GitHub, filesystems, databases, and APIs.

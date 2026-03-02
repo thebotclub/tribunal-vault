@@ -1,3 +1,12 @@
+---
+id: rules/learn
+version: 1.0.0
+category: workflow
+tags:
+  - workflow
+deprecated: false
+---
+
 ## Online Learning System
 
 **Rule:** Evaluate sessions for extractable knowledge. Only act when there's something valuable.

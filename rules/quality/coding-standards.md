@@ -1,3 +1,12 @@
+---
+id: rules/coding-standards
+version: 1.0.0
+category: quality
+tags:
+  - quality
+deprecated: false
+---
+
 ## Coding Standards
 
 Apply these standards to all code changes.

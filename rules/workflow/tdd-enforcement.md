@@ -1,3 +1,13 @@
+---
+id: rules/tdd-enforcement
+version: 1.0.0
+category: workflow
+tags:
+  - workflow
+  - tdd
+deprecated: false
+---
+
 ## TDD (Test-Driven Development) - Mandatory Workflow
 
 **⛔ STOP AND THINK BEFORE WRITING ANY CODE: Do you have a failing test? If not, write the test FIRST.**

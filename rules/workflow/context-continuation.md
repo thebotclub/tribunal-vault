@@ -1,3 +1,12 @@
+---
+id: rules/context-continuation
+version: 1.0.0
+category: workflow
+tags:
+  - workflow
+deprecated: false
+---
+
 # Context Continuation - Endless Mode for All Sessions
 
 **Rule:** When context reaches critical levels, save state and continue seamlessly in a new session.

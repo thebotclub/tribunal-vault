@@ -1,4 +1,10 @@
 ---
+id: agents/spec-reviewer-quality
+version: 1.0.0
+category: spec-reviewer-quality.md
+tags:
+  - spec
+deprecated: false
 name: spec-reviewer-quality
 description: Verifies code quality, testing adequacy, security, performance, and error handling. Returns structured JSON findings.
 tools: Read, Grep, Glob, Write, Bash(git diff:*), Bash(git log:*)

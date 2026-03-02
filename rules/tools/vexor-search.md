@@ -1,3 +1,12 @@
+---
+id: rules/vexor-search
+version: 1.0.0
+category: tools
+tags:
+  - tools
+deprecated: false
+---
+
 ## Semantic Code Search using Vexor CLI (IMPORTANT)
 
 Semantic file discovery via `vexor`. Use whenever locating where something is implemented/loaded/defined in a medium or large repo, or when the file location is unclear. Prefer this over manual browsing. Find files by intent (what they do), not exact text.

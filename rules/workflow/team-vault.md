@@ -1,3 +1,12 @@
+---
+id: rules/team-vault
+version: 1.0.0
+category: workflow
+tags:
+  - workflow
+deprecated: false
+---
+
 ## Team Vault (sx)
 
 Share AI assets (rules, skills, commands, agents, hooks) across your team using `sx` and a private Git repository.

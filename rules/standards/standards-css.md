@@ -1,10 +1,12 @@
 ---
-paths:
-  - "**/*.css"
-  - "**/*.scss"
-  - "**/*.sass"
-  - "**/*.less"
-  - "**/*.module.css"
+id: rules/standards-css
+version: 1.0.0
+category: standards
+tags:
+  - standards
+  - css
+deprecated: false
+paths: 
 ---
 
 # CSS Standards

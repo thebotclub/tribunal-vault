@@ -1,3 +1,13 @@
+---
+id: rules/workflow-enforcement
+version: 1.0.0
+category: workflow
+tags:
+  - workflow
+  - spec
+deprecated: false
+---
+
 # Workflow Enforcement Rules
 
 ## Task Complexity Triage

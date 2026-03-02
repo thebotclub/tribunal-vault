@@ -1,3 +1,12 @@
+---
+id: rules/systematic-debugging
+version: 1.0.0
+category: workflow
+tags:
+  - workflow
+deprecated: false
+---
+
 ## Systematic Debugging
 
 **Rule:** No fixes without root cause investigation. Complete phases sequentially.

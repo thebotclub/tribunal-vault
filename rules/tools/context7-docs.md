@@ -1,3 +1,13 @@
+---
+id: rules/context7-docs
+version: 1.0.0
+category: tools
+tags:
+  - tools
+  - spec
+deprecated: false
+---
+
 ## Library Documentation with Context7
 
 **MANDATORY: Use Context7 BEFORE writing code with unfamiliar libraries.** Context7 provides up-to-date documentation, code examples, and best practices that prevent mistakes and save time.

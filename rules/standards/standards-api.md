@@ -1,10 +1,12 @@
 ---
-paths:
-  - "**/routes/**"
-  - "**/api/**"
-  - "**/controllers/**"
-  - "**/endpoints/**"
-  - "**/handlers/**"
+id: rules/standards-api
+version: 1.0.0
+category: standards
+tags:
+  - standards
+  - spec
+deprecated: false
+paths: 
 ---
 
 # API Standards

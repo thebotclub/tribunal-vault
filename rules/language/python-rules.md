@@ -1,6 +1,12 @@
 ---
-paths:
-  - "**/*.py"
+id: rules/python-rules
+version: 1.0.0
+category: language
+tags:
+  - language
+  - python
+deprecated: false
+paths: 
 ---
 
 ## Python Development Standards

@@ -1,10 +1,11 @@
 ---
-paths:
-  - "**/*.tsx"
-  - "**/*.jsx"
-  - "**/*.html"
-  - "**/*.vue"
-  - "**/*.svelte"
+id: rules/standards-accessibility
+version: 1.0.0
+category: standards
+tags:
+  - standards
+deprecated: false
+paths: 
 ---
 
 # Accessibility Standards

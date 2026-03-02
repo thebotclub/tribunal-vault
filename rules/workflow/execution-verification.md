@@ -1,3 +1,12 @@
+---
+id: rules/execution-verification
+version: 1.0.0
+category: workflow
+tags:
+  - workflow
+deprecated: false
+---
+
 ## Execution Verification
 
 **Core Rule:** Tests passing ≠ Program working. Always execute and verify real output.

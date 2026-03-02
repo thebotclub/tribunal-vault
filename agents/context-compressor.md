@@ -1,3 +1,11 @@
+---
+id: agents/context-compressor
+version: 1.0.0
+category: context-compressor.md
+tags: []
+deprecated: false
+---
+
 # Context Compressor Agent
 
 **Purpose:** Compress the current session's Skillfield Memory observations into a compact `context-summary.md` for seamless handoff between sessions.

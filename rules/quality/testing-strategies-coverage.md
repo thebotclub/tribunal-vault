@@ -1,13 +1,12 @@
 ---
-paths:
-  - "**/test_*.py"
-  - "**/*_test.py"
-  - "**/tests/**"
-  - "**/conftest.py"
-  - "**/*.test.*"
-  - "**/*.spec.*"
-  - "**/__tests__/**"
-  - "**/*_test.go"
+id: rules/testing-strategies-coverage
+version: 1.0.0
+category: quality
+tags:
+  - quality
+  - spec
+deprecated: false
+paths: 
 ---
 
 ## Testing Strategies and Coverage
