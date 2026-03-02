@@ -1,0 +1,14 @@
+{
+  "name": "tribunal-vault",
+  "version": "1.2.0",
+  "description": "Tribunal Vault — Community library of AI coding rules, hooks, agents and modes for Claude Code.",
+  "keywords": ["claude-code", "tribunal", "tdd", "rules", "agents", "hooks"],
+  "author": "thebotclub <info@thebotclub.ai>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thebotclub/tribunal-vault.git"
+  },
+  "homepage": "https://github.com/thebotclub/tribunal-vault",
+  "files": ["rules/", "agents/", "commands/", "modes/", "hooks/", "vault.json", "README.md"]
+}
