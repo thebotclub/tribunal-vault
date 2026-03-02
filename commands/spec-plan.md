@@ -463,8 +463,9 @@ Worktree: Yes
 
 ## Implementation Tasks
 
-### Task 1: [Component Name]
+### Task 1: [Component Name] <!-- complexity: S|M|L|XL -->
 
+**Complexity:** S (2k tokens) | M (8k) | L (20k) | XL (50k) — _choose one_
 **Objective:** ...
 **Dependencies:** None
 **Files:** ...
@@ -472,8 +473,9 @@ Worktree: Yes
 **Definition of Done:** ...
 **Verify:** [Concrete commands to verify this task]
 
-### Task 2: [Component Name]
+### Task 2: [Component Name] <!-- complexity: S|M|L|XL -->
 
+**Complexity:** S (2k tokens) | M (8k) | L (20k) | XL (50k) — _choose one_
 **Objective:** ...
 **Dependencies:** Task 1
 **Files:** ...
@@ -605,6 +607,37 @@ After merging findings, fix all issues by severity:
 | **suggestion** | Incorporate if reasonable, or note in Open Questions |
 
 **Only proceed to Step 1.8 after all must_fix and should_fix issues are resolved.**
+
+### Step 1.7b: Context Budget Planning
+
+**After verification passes, calculate and add a Context Budget section to the plan file:**
+
+Token estimates per complexity tag:
+- **S** = 2,000 tokens (simple: single function, small config change)
+- **M** = 8,000 tokens (medium: new module, 1-3 files changed)
+- **L** = 20,000 tokens (large: feature with multiple components, tests)
+- **XL** = 50,000 tokens (extra large: architecture change, many files)
+
+Steps:
+1. Sum tokens for all tasks based on their complexity tag
+2. Compute sessions needed: `ceil(total_tokens / 150_000)`
+3. Add this section to the plan file (after Risks, before any footer):
+
+```markdown
+## Context Budget
+
+| Task | Complexity | Est. Tokens |
+|------|------------|-------------|
+| Task 1: [name] | M | 8,000 |
+| Task 2: [name] | L | 20,000 |
+| ... | ... | ... |
+| **Total** | | **28,000** |
+
+**Estimated: 1 session for N tasks (28k token-equivalent)**
+> Context window: 150k tokens. Sessions = ceil(total / 150k).
+```
+
+Present this to the user in the approval summary so they know the scope upfront.
 
 ### Step 1.8: Get User Approval
 
